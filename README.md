@@ -1,4 +1,4 @@
-# [Curren$y Exchanger](https://github.com/christinereina/epicodus-currency)
+# Epicodus::Ruby::Anagrams & Antigrams
 
 #### Epicodus Week Eight Independent Project | Behavior-Driven Development with Ruby - Anagrams & Antigrams : 5.08.2020
 
