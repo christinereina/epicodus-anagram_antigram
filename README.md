@@ -44,7 +44,7 @@ Check if "anagrams" are antigrams:
 
 ## Known Bugs
 
-n/a
+not functional as of 5/8
 
 ## Support 
 
