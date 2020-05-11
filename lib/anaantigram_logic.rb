@@ -11,6 +11,8 @@ attr_accessor(:word1, :word2)
     @word2 = @word2.split('').sort.join('')
     if @word1 == @word2
       return true
+    else
+      return false
     end
   end
 end
