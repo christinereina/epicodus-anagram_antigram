@@ -1,9 +1,9 @@
 require('rspec')
 require('anaantigram_logic')
 
-describe("Gram#create_array") do
-  it ("will split word1 string into an array") do
-  word1 = Gram.new("cat")
-  expect(word1.create_array).to(eq(["c", "a", "t"]))
+describe("Gram#anagram_check") do
+  it ("Check if two words are anagrams") do
+    anagram = Gram.new("cat", "tac")
+  expect(anagram.anagram_check).to(eq(true))
   end
 end
