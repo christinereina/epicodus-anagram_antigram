@@ -7,6 +7,6 @@ attr_accessor(:word1, :word2, :word1_arr)
   end
 
   def create_array
-    @split_word1 = @word1.split(/\b/)
+    @split_word1 = @word1.split('')
   end
 end
