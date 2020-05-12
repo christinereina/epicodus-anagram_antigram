@@ -6,6 +6,12 @@ attr_accessor(:word1, :word2)
     @word2 = word2
   end
 
+  def char_check()
+    @word1 = @word1.gsub(/[^a-zA-Z]/, '')
+    @word2 = @word2.gsub(/[^a-zA-Z]/, '')
+     end
+   end
+ 
   def word_check()
     if @word1=~ /[aeiouy]/ && @word2=~ /[aeiouy]/ 
     return true
