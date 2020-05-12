@@ -15,9 +15,11 @@ attr_accessor(:word1, :word2)
   end
 
   def antigram_check ()
-    @array1 = @word1.split('').length()
-    @array2 = @word2.split('').length()
-    if (@array1 != @array2)
+    @array1 = @word1.split('')
+    @array2 = @word2.split('')
+    if @array1 == @array2
+      return true
+    else
       return false
   end
 end

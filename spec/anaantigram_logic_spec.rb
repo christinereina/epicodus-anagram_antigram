@@ -38,7 +38,7 @@ end
 
 describe("Gram#antigram_check") do
   it ("Checking if letters no matches") do
-    user_words = Gram.new("bye", "bye")
-  expect(user_words.antigram_check).to(eq("these match"))
+    user_words = Gram.new("hieed", "bye")
+  expect(user_words.antigram_check).to(eq(false))
   end
 end
