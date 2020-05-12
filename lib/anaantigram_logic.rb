@@ -7,7 +7,7 @@ attr_accessor(:word1, :word2)
   end
 
   def word_check()
-    if @word1.scan(/[aeiouy]/) & @word2.scan(/[aeiouy]/) 
+    if @word1=~ /[aeiouy]/ && @word2=~ /[aeiouy]/ 
     return true
   else
     return false
@@ -17,7 +17,7 @@ attr_accessor(:word1, :word2)
   def antigram_check ()
     @array1 = @word1.split('').length()
     @array2 = @word2.split('').length()
-    if @array1 != @array2
+    if (@array1 != @array2)
       return false
   end
 end
