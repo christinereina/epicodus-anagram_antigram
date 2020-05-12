@@ -4,6 +4,7 @@ require('anaantigram_logic')
 describe("Gram#anagram_check") do
   it ("Check if two words are anagrams") do
     user_words = Gram.new("cat", "tac")
+    user_words.anagram_check
   expect(user_words.anagram_check).to(eq(true))
   end
 end
