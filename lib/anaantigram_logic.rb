@@ -7,12 +7,20 @@ attr_accessor(:word1, :word2)
   end
 
   def word_check()
-    if @word1.match?(/[aeiouy]/) & @word2.match?(/[aeiouy]/) 
+    if @word1.scan(/[aeiouy]/) & @word2.scan(/[aeiouy]/) 
     return true
   else
-    puts "Delete this and log off. These ain't words"
+    return false
     end
   end
+
+  def antigram_check ()
+    @array1 = @word1.split('').length()
+    @array2 = @word2.split('').length()
+    if @array1 != @array2
+      return false
+  end
+end
 
   def anagram_check ()
     @word1 = @word1.downcase.split('').sort.join('')

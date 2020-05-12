@@ -15,6 +15,13 @@ describe("Gram#anagram_check") do
   end
 end
 
+describe("Gram#anagram_check") do
+  it ("Check if two words have spaces and punctuation") do
+    user_words = Gram.new("Cat" , "t!ac")
+  expect(user_words.anagram_check).to(eq(false))
+  end
+end
+
 describe("Gram#word_check") do
   it ("check if the inputs are words") do
     user_words = Gram.new("act", "tac")
@@ -29,3 +36,9 @@ describe("Gram#word_check") do
   end
 end
 
+describe("Gram#antigram_check") do
+  it ("Checking if letters no matches") do
+    user_words = Gram.new("hi", "bye")
+  expect(user_words.antigram_check).to(eq(false))
+  end
+end
