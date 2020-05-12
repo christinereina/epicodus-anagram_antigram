@@ -44,8 +44,6 @@ Check if "anagrams" are antigrams:
 
 ## Known Bugs
 
-not functional as of 5/8
-
 ## Support 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/christinereina/epicodus-anagram_antigram.
