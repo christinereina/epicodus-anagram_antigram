@@ -39,14 +39,14 @@ end
 
 describe("Gram#antigram_check") do
   it ("Checking if words are/are not matches") do
-    user_words = Gram.new("hieed", "bye")
+    user_words = Gram.new("hi", "bye")
   expect(user_words.antigram_check).to(eq(false))
   end
 end
 
-describe("Gram#char_check") do
-  it ("Checking if words contain anything but letters") do
-    user_words = Gram.new("hi", "hi")
-  expect(user_words.char_check).to(eq(false))
-  end
-end
+# describe("Gram#char_check") do
+#   it ("Checking if words contain anything but letters") do
+#     user_words = Gram.new("hi", "hi")
+#   expect(user_words.char_check).to(eq(false))
+#   end
+# end
