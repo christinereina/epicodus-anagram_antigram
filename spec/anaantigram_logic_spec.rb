@@ -32,7 +32,7 @@ end
 
 describe("Gram#word_check") do
   it ("check if the inputs are NOT words") do
-    user_words = Gram.new("hi", "bye")
+    user_words = Gram.new("sdfjl", "sdflkjl")
   expect(user_words.word_check).to(eq(false))
   end
 end
