@@ -47,6 +47,6 @@ end
 describe("Gram#char_check") do
   it ("Checking if words contain anything but letters") do
     user_words = Gram.new("h!", "hi")
-  expect(user_words.char_check).to(eq(true))
+  expect(user_words.char_check).to(eq(false))
   end
 end
